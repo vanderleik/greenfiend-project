@@ -12,9 +12,8 @@ import { EmailVerificationToken } from '../../auth/entities/email-verification-t
 import { PasswordResetToken } from '../../auth/entities/password-reset-token.entity';
 import { Session } from '../../auth/entities/session.entity';
 
-const dateColumnType = (
-  process.env.DB_TYPE === 'postgres' ? 'timestamptz' : 'datetime'
-) as const;
+const dateColumnType: 'timestamptz' | 'datetime' =
+  process.env.DB_TYPE === 'postgres' ? 'timestamptz' : 'datetime';
 
 @Entity('users')
 export class User {

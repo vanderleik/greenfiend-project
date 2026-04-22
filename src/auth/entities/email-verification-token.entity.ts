@@ -9,9 +9,8 @@ import {
 } from 'typeorm';
 import { User } from '../../users/entities/user.entity';
 
-const dateColumnType = (
-  process.env.DB_TYPE === 'postgres' ? 'timestamptz' : 'datetime'
-) as const;
+const dateColumnType: 'timestamptz' | 'datetime' =
+  process.env.DB_TYPE === 'postgres' ? 'timestamptz' : 'datetime';
 
 @Entity('email_verification_tokens')
 export class EmailVerificationToken {
