@@ -4,7 +4,7 @@
 
 Este arquivo vale para o monorepo inteiro. Ele contem apenas regras compartilhadas e estaveis entre subprojetos.
 
-- Mantenha neste nivel apenas orientacoes gerais de navegacao, arquitetura e fluxo de trabalho.
+- Mantenha neste nivel apenas orientacoes gerais de navegação, arquitetura e fluxo de trabalho.
 - Nao coloque aqui detalhes de implementacao, comandos ou convencoes especificas de um subprojeto.
 - Quando existir um `AGENTS.md` dentro de um subprojeto, ele tem prioridade sobre este arquivo para aquele escopo.
 
@@ -37,7 +37,7 @@ Consulte [docs/diagrams/software-arch.mermaid](docs/diagrams/software-arch.merma
 
 ## Diretrizes Compartilhadas
 
-- Antes de alterar qualquer area, procure primeiro o `AGENTS.md` mais proximo ao codigo que voce vai tocar.
+- Antes de alterar qualquer area, procure primeiro o `AGENTS.md` mais proxmo ao codigo que voce vai tocar.
 - Prefira links para documentacao existente em vez de repetir contexto em instrucoes de agente.
 - Se uma mudanca atravessar mais de um subprojeto, preserve as regras locais de cada um e registre apenas o criterio global aqui.
 - Atualize [docs/](docs/) quando a mudanca afetar produto, arquitetura ou contratos entre subprojetos.
